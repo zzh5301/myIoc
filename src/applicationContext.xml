@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean name="beanA" class="ioc.bean.BeanA">
+        <property name="name" value="Jason"></property>
+        <property name="b" ref="beanB"></property>
+    </bean>
+
+    <bean name="beanB" class="ioc.bean.BeanB" scope="prototype">
+        <property name="id" value="13"></property>
+    </bean>
+</beans>
